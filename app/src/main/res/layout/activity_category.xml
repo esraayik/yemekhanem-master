@@ -1,15 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/categoryConstraitLayout"
+<android.support.constraint.ConstraintLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bg"
-    tools:context="com.akillitarifler.yemekhanem.CategoryActivity">
+
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.akillitarifler.yemekhanem.CategoryActivity" >
 
     <ScrollView
         android:id="@+id/categoryScrollView"
+
         android:layout_width="368dp"
         android:layout_height="551dp"
         android:layout_marginBottom="8dp"
@@ -21,42 +24,216 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0">
+        app:layout_constraintVertical_bias="1.0"
 
+       >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="16dp"
+
+
+        >
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center|start"
-            android:orientation="horizontal">
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="28dp"
+
+                >
 
             <ImageView
-                android:id="@+id/imageView11"
-                android:layout_width="165dp"
-                android:layout_height="match_parent"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentTop="true"
+                android:id="@+id/deserts"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+
                 android:clickable="true"
-                android:onClick="desert"
-                android:layout_gravity="left"
-                android:layout_marginEnd="32dp"
-                app:srcCompat="@drawable/cat"
-                android:paddingLeft="10px"
-                android:paddingTop="20px"/>
+                android:onClick="deserts"
+
+               android:background="@drawable/favorites"
+                tools:ignore="OnClick" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Deneme1"
+                android:textSize="16dp"
+                android:layout_marginTop="10dp"
 
 
-            <ImageView
-                android:id="@+id/imageView12"
-                android:layout_width="183dp"
-                android:layout_height="100dp"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentTop="true"
-                android:layout_gravity="right"
-                android:layout_marginStart="33dp"
-                app:srcCompat="@drawable/cat"
-                android:paddingRight="100px"
-                android:paddingTop="20px"/>
+                />
+            </LinearLayout>
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+
+                android:padding="28dp"
+
+                >
+
+                <ImageView
+                    android:id="@+id/desert2"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+
+                    android:clickable="true"
+                    android:onClick="deserts"
+
+                    android:background="@drawable/favorites"
+                    tools:ignore="OnClick" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Deneme1"
+                    android:textSize="16dp"
+                    android:layout_marginTop="10dp"
+
+
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="28dp"
+
+
+                >
+
+                <ImageView
+                    android:id="@+id/desert1"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+
+                    android:clickable="true"
+                    android:onClick="deserts"
+
+                    android:background="@drawable/favorites"
+                    tools:ignore="OnClick" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Deneme1"
+                    android:textSize="16dp"
+                    android:layout_marginTop="10dp"
+
+
+                    />
+            </LinearLayout>
         </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="28dp"
 
-    </ScrollView>
+                >
+
+                <ImageView
+                    android:id="@+id/desert6"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+
+                    android:clickable="true"
+                    android:onClick="deserts"
+
+                    android:background="@drawable/favorites"
+                    tools:ignore="OnClick" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Deneme1"
+                    android:textSize="16dp"
+                    android:layout_marginTop="10dp"
+
+
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+
+                android:padding="28dp"
+
+                >
+
+                <ImageView
+                    android:id="@+id/desert5"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+
+                    android:clickable="true"
+                    android:onClick="deserts"
+
+                    android:background="@drawable/favorites"
+                    tools:ignore="OnClick" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Deneme1"
+                    android:textSize="16dp"
+                    android:layout_marginTop="10dp"
+
+
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="28dp"
+
+
+                >
+
+                <ImageView
+                    android:id="@+id/desert4"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+
+                    android:clickable="true"
+                    android:onClick="deserts"
+
+                    android:background="@drawable/favorites"
+                    tools:ignore="OnClick" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Deneme1"
+                    android:textSize="16dp"
+                    android:layout_marginTop="10dp"
+
+
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</ScrollView>
 </android.support.constraint.ConstraintLayout>
+
